@@ -1,0 +1,12 @@
+{
+    "id": "{1FB5E411-3E9D-4104-88F5-C37A2ED88E70}",
+    "author": "Florian Graßinger",
+    "name": "Energy Calculator",
+    "url": "https://github.com/pinkerunicorn/Energierechner",
+    "compatibility": {
+        "version": "8.0"
+    },
+    "version": "1.0",
+    "build": 0,
+    "date": 0
+}

@@ -1,0 +1,13 @@
+{
+    "id": "{D983D09E-077C-4166-BB2C-2FF7FB7F5EBF}",
+    "name": "Energierechner",
+    "type": 3,
+    "vendor": "Symcon",
+    "aliases": [
+        "Energy Calculator"
+    ],
+    "parentRequirements": [],
+    "childRequirements": [],
+    "implemented": [],
+    "prefix": "EC"
+}
