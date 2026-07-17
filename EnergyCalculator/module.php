@@ -28,6 +28,23 @@ class Energierechner extends IPSModuleStrict
     {
         // Never delete this line!
         parent::ApplyChanges();
+        // --- Auto-generated References ---
+        foreach ($this->GetReferenceList() as $refID) {
+            $this->UnregisterReference($refID);
+        }
+        $ref_SourceVariable = $this->ReadPropertyInteger('SourceVariable');
+        if ($ref_SourceVariable > 1 && @IPS_ObjectExists($ref_SourceVariable)) {
+            $this->RegisterReference($ref_SourceVariable);
+        }
+        $ref_BasePriceVariable = $this->ReadPropertyInteger('BasePriceVariable');
+        if ($ref_BasePriceVariable > 1 && @IPS_ObjectExists($ref_BasePriceVariable)) {
+            $this->RegisterReference($ref_BasePriceVariable);
+        }
+        $ref_EnergyPriceVariable = $this->ReadPropertyInteger('EnergyPriceVariable');
+        if ($ref_EnergyPriceVariable > 1 && @IPS_ObjectExists($ref_EnergyPriceVariable)) {
+            $this->RegisterReference($ref_EnergyPriceVariable);
+        }
+        // ---------------------------------
 
         // Maintain Variables
         $enableWeek = $this->ReadPropertyBoolean('EnableWeek');
