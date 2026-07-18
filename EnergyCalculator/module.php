@@ -191,12 +191,20 @@ class Energierechner extends IPSModuleStrict
     "elements": [
         {
             "type": "Label",
+            "caption": "Willkommen im Energierechner! Wähle hier zuerst die Variable aus, in der dein Stromzählerstand (in kWh) geloggt wird."
+        },
+        {
+            "type": "Label",
             "caption": "Verbrauchsvariable (Zähler, in kWh):"
         },
         {
             "type": "SelectVariable",
             "name": "SourceVariable",
             "caption": "Gesamtverbrauch"
+        },
+        {
+            "type": "Label",
+            "caption": "Damit ich dir die Kosten ausrechnen kann, brauche ich noch deine aktuellen Tarife. Wähle hier die Variablen für Grund- und Arbeitspreis."
         },
         {
             "type": "Label",
@@ -211,6 +219,10 @@ class Energierechner extends IPSModuleStrict
             "type": "SelectVariable",
             "name": "EnergyPriceVariable",
             "caption": "Arbeitspreis (Cent/kWh)"
+        },
+        {
+            "type": "Label",
+            "caption": "Was möchtest du alles berechnen lassen? Stell hier ein, welche Zeiträume dich interessieren."
         },
         {
             "type": "Label",
